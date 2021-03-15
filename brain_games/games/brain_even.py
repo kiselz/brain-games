@@ -24,14 +24,14 @@ def start_game(name):
         curr_number = get_random_number()
 
         print('Question: {}'.format(curr_number))
-        answer = input('Your answer: ')
-        is_answer_right = check_answer(answer, curr_number)
+        user_answer = input('Your answer: ')
+        is_answer_right = check_answer(user_answer, curr_number)
         if is_answer_right:
             print('Correct!')
             curr_try += 1
         else:
             print("'{}' is wrong answer :(. Correct answer was '{}'"
-                  .format(answer, reversed_answer(answer)))
+                  .format(user_answer, reversed_answer(user_answer)))
             is_lost = True
             break
     if is_lost:
