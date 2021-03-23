@@ -1,11 +1,13 @@
 #!/usr/bin/env python
+"""Starts brain-calc game"""
+
+
 from brain_games.games import brain_calc
-from brain_games import welcome_user
+from ..engine import start_game
 
 
 def main():
-    name = welcome_user()
-    brain_calc.start_game(name)
+    start_game(brain_calc)
 
 
 if __name__ == '__main__':

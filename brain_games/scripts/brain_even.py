@@ -1,11 +1,13 @@
 #!/usr/bin/env python
+"""Starts brain-even game"""
+
+
 from brain_games.games import brain_even
-from brain_games import welcome_user
+from ..engine import start_game
 
 
 def main():
-    name = welcome_user()
-    brain_even.start_game(name)
+    start_game(brain_even)
 
 
 if __name__ == '__main__':

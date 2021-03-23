@@ -1,11 +1,13 @@
 #!/usr/bin/env python
+"""Starts brain-gcd game"""
+
+
 from brain_games.games import brain_gcd
-from brain_games import welcome_user
+from ..engine import start_game
 
 
 def main():
-    name = welcome_user()
-    brain_gcd.start_game(name)
+    start_game(brain_gcd)
 
 
 if __name__ == '__main__':
