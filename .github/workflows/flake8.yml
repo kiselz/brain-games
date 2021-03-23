@@ -1,4 +1,4 @@
-name: check-code
+name: linter
 
 on: [push]
 jobs:
